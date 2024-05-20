@@ -1,0 +1,104 @@
+/* Main container */
+.productdisplay {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Keep alignment at the top */
+    margin: 0 10%; /* Use percentage for responsive margin */
+    gap: 30px; /* Add gap for space between children */
+}
+
+/* Left column for additional images */
+.productdisplay-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Slightly increased gap for better spacing */
+    align-items: center; /* Center items for a tidier look */
+}
+
+/* Styling for images in the list */
+.productdisplay-img-list img {
+    height: auto; /* Adjust for aspect ratio */
+    width: 100px; /* Set a fixed width for consistency */
+    object-fit: cover; /* Ensure images cover the area nicely */
+    border-radius: 5px; /* Add rounded corners for a softer look */
+}
+
+/* Main image styling */
+.productdisplay-main-img {
+    width: 100%; /* Make it responsive */
+    max-width: 550px; /* Limit width */
+    height: auto; /* Adjust height automatically */
+    max-height: 600px; /* Limit maximum height */
+    object-fit: contain; /* Ensure image fits well within bounds */
+}
+
+/* Right column for product details */
+.productdisplay-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align to start for consistency */
+    gap: 20px; /* Add gap for space between items */
+    max-width: 400px; /* Adjusted for better text readability */
+    align-items: flex-start; /* Ensure alignment to start */
+}
+
+/* Product title */
+.productdisplay-right h1 {
+    color: #3d3d3d;
+    font-size: 2em; /* Use em for scalability */
+    font-weight: 700;
+    line-height: 1.2; /* Improve readability */
+}
+
+/* Product star rating */
+.productdisplay-right-star {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #ff9800; /* Brighter color for stars */
+    font-size: 1em;
+}
+
+/* Product prices */
+.productdisplay-right-prices {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Increased gap for better distinction */
+}
+
+.productdisplay-right-prices span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.productdisplay-right-prices-old {
+    color: #818181;
+    text-decoration: line-through;
+}
+
+.productdisplay-right-prices-new {
+    color: #ff4e1f; /* Bright color for new price */
+}
+
+/* Product size heading */
+.productdisplay-right-size h2 {
+    color: #656565;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+/* Action button */
+.productdisplay-right button {
+    padding: 15px 30px;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    background: #FF4141; /* Saturated color for visibility */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.productdisplay-right button:hover {
+    background: #ff2e2e; /* Darker shade on hover */
+}

@@ -1,0 +1,41 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.6s; /* Move the transition property here for better performance */
+}
+.item img {
+    width: 100%; /* Adjust the width as necessary, 100% makes it responsive to the container's width */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* This will ensure that the image covers the area, without stretching the image */
+    margin-bottom: 10px; /* Adds some space between the image and the text below */
+}
+.item p {
+    margin: 6px 0px;
+}
+
+.item-prices {
+    display: flex;
+    gap: 20px;
+}
+
+.item-price-new {
+    color: #374151;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.item-price-old {
+    color: #8c8c8c;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    transition: 0.6s;
+}
